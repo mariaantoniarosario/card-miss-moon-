@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDS</title>
+    <style> 
+
+        body {  /*estilo do geral corpo da pagina*/
+            font-family:' Times New Roman',Times,serif ; /* Altera a fonte do site*/
+            margin: 20px; /* cria uma margem nos cantos*/
+            background-color: rgb(192, 135, 245); /* Muda cor do fundo*/
+    
+        }
+
+    
+        header{
+            background-color: rgb(178, 107, 245); /*Muda cor do fundo*/ 
+            text-align: center ; /*Coloca os Textos ao centro*/ 
+            padding: 20px; /*Ajusta o Espaçamento Interno*/ 
+            color: aliceblue; /* Muda a Cor das Letras*/
+            
+        }
+        nav a { /*links da navegaçâo*/
+            color: darkorchid;/* muda a cor dos links*/
+            margin: 0 30px; /*define um espaçamento entres os links */
+            text-decoration: none; /* tira a linha de baixo dos links */
+            font-size: 20 px; /*tamanho da fonte */
+        }
+        /* quando o mouse passa sobre o links*/
+        nav a:hover {
+            text-decoration: underline; /*Aparece quando passar o mouse*/
+            color: bisque; /*muda a cor ao passar o mouse*/
+        }
+        .fundo{
+            display: flex; /* define que os elementos devem ficar um ao lado do outro*/
+            gap: 20px; /*define um espaçamento entre os itens*/
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        
+
+        .card{ /*card individual*/
+            align-items: center;/*centraliza conteudo*/
+            object-fit: cover;/*centraliza texto*/
+            background-color: rgb(192, 135, 244);/*cor do card */
+            color: rgb(227, 196, 255);
+            width: 200px;/* largura fixa*/ 
+            height: 300px;/*altura fixa*/
+            border: 15px;/*cantos arrendondados*/
+            padding: 10px; /*espaço interno*/
+           }
+
+           .card img{ /*imagem do card*/ 
+            width: 100%;/*ocupa toda a largura*/ 
+            height: 80%; /* ocupa 80% da altrura*/ 
+            object-fit: cover; /* ajusta sem distorcer*/ 
+            box-sizing: 15px; /* cantos arrendondados*/ 
+           }
+
+           .card:hover{ /* efeito ao passar o mouse*/ 
+            transform: translate(-10px) scale(1.02);/* move e aumenta*/
+            border-color: rgb(228, 203, 252); /*cor da borda*/ 
+            box-shadow: 0 15px 20px rgb(227, 182, 255); /*sombra*/ 
+           }
+
+
+
+    </style> 
+
+
+
+
+
+</head>
+<body>
+        <!-- Aqui é o cabeçalho-->
+  <header> 
+        <h1>miss moon</h1> <!--titulo do cabeçalho-->
+        <!--aqui começa o menu de navegação, dentro estão os links do cabeçalho-->
+        <nav> 
+            <a href="">história</a>
+            <a href="">titulos</a>      <!--links do cabeçalho  -->
+            <a href="">produtos</a>
+        </nav>
+        <!--aqui termina o menu de navegação-->
+  </header>
+        <!--aqui termina o cabeçalho-->
+    <div class="fundo"> <!--aqui dentro estão os cards-->
+
+      <!--card 1 - 2017--> 
+      <a href="https://vscode.dev/?vscode-lang=pt-br"> 
+        <div class="card">
+            <img src= https://tse4.mm.bing.net/th/id/OIP.u7D4X3lhThJi4sU0MDi-2QHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"">     <!--imagem do card-->
+            <h2>gemẽos lacração</h2>  <!--titulo do card-->
+        </div>
+        </a>
+     <!--aqui acaba o card irmãos-->
+
+
+     <!--card 2 - 2011-->
+     <a href="">
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.kcEu2kRKu1RQP7AOexY4UAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"> <!--imagem do card-->
+            <h2>miss moon diva</h2></h2>  <!--titulo do card-->
+        </div>
+     <!--aqui acaba o card miss monn divando-->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
